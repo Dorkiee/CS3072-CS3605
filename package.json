@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend for my FYP LMS project",
   "type": "module",
+  "proxy" : "https://phishshield-1814493.onrender.com",
   "scripts": {
     "start": "node server.js",
     "build": "npm i",
