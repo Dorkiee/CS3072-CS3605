@@ -1,6 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose';
-import courseModel from '../models/courseModel.js'
+import courseModel from './courseModel.js'
 
 
 const Courses = mongoose.model("course");

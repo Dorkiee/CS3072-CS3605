@@ -1,8 +1,8 @@
 import express from 'express'
 import mongoose from 'mongoose';
 
-import examModel from '../Models/examModel.js'
-import userModel from '../Models/userModel.js'
+import examModel from './examModel.js'
+import userModel from './userModel.js'
 
 const examController = express.Router();
 

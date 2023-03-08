@@ -2,7 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose';
 
 
-import userModel from '../Models/userModel.js'
+import userModel from './userModel.js'
 import bcrypt from'bcrypt'
 import jwt from 'jsonwebtoken'
 

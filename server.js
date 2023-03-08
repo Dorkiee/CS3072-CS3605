@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 
 import userRoutes from './backend/Routes/userRoutes.js'
-import courseRoutes from './backend/Routes/courseRoutes.js'
+import courseRoutes from './courseRoutes.js'
 import cors from 'cors'
 import examRoutes from './backend/Routes/examRoutes.js'
 

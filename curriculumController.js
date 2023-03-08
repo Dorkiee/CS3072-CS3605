@@ -3,7 +3,7 @@ import express from 'express'
 import mongoose from 'mongoose';
 
 
-import curriculmModel from '../models/curriculumModel.js'
+import curriculmModel from './curriculumModel.js'
 
 
 const Enroll = mongoose.model("enrolled"); 

@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import User from '../Models/userModel.js'
+import User from './userModel.js'
 
 import asyncHandler from 'express-async-handler'
 
