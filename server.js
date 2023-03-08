@@ -3,8 +3,6 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 
 import routes from './userRoutes.js'
-import userController from './userController.js'
-
 import cors from 'cors'
 
 import path from 'path'
@@ -29,7 +27,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/app', userController)
+app.use('/app', routes)
 
 app.use((req, res, next) => {
   const error = new Error(`Not found -${req.originalUrl}`)
