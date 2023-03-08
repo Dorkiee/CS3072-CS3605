@@ -2,10 +2,8 @@ import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 
-import userRoutes from './userRoutes.js'
-import courseRoutes from './courseRoutes.js'
+import routes from './userRoutes.js'
 import cors from 'cors'
-import examRoutes from './examRoutes.js'
 
 import path from 'path'
 
@@ -29,9 +27,8 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/app', userRoutes)
-app.use('/app', courseRoutes)
-app.use('/app', examRoutes)
+app.use('/app', routes)
+
 app.use((req, res, next) => {
   const error = new Error(`Not found -${req.originalUrl}`)
   res.status(404)

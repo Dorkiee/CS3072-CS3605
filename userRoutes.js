@@ -2,8 +2,12 @@
 import express from 'express'
 import userController from './userController.js'
 import curriculumController from './curriculumController.js'
+import examController from './examController.js'
+import courseController from './courseController.js'
 
 const userRoutes = express.Router() //add comment to include courseRoutes i think should work???
+const examRoutes = express.Router()
+const courseRoutes = express.Router()
 
 userRoutes.post('/sign-up', userController)
 userRoutes.post('/sign-up-admin', userController)
@@ -26,5 +30,19 @@ userRoutes.get('/mycourse/:id', curriculumController) //assigning users to this 
 userRoutes.put('/course-status/:id', curriculumController) 
 userRoutes.post('/completed-course-update/:id', curriculumController) 
 userRoutes.get('/enroll-count', curriculumController) 
+
+
+examRoutes.post('/examinationResults', examController)
+examRoutes.get('/examination', examController)
+examRoutes.post('/Dashboard', userController)
+
+
+
+courseRoutes.post('/createcourse', courseController)
+courseRoutes.get('/courses', courseController)
+courseRoutes.get('/course/:id', courseController) //assigning users to this course -- created by moderator -- not editible
+courseRoutes.put('/update-createdcourse/:id', courseController) //editible course, admins can add questions and information
+courseRoutes.delete('/delete-createdcourse/:id', courseController)
+courseRoutes.get('/task-count', courseController)
 
 export default userRoutes;
