@@ -45,3 +45,11 @@ app.use((err, req, res, next) => {
 
 
 app.listen(process.env.PORT || port, () => console.log("server is up and running"))
+
+//Server Production Assests
+if(process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join("build")))
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "build", "index.html"))
+  } )
+}
