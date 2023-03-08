@@ -1,0 +1,54 @@
+
+.question {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  
+  .option {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .option.selected {
+    background-color: lightblue;
+  }
+  
+  .correct-answer {
+    color: green;
+  }
+  
+  .incorrect-answer {
+    color: red;
+  }
+  
+  .next-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #eee;
+  }
+
+  .form-container {
+    display: inline-block;
+    background-color: #eee; /* set the background color to purple */
+    width: 1050px; /* set the width of the form */
+    border-radius: 100px; /* add some rounded corners */
+    padding: 20px; /* add some padding */
+    margin-left: 90px; /* add some padding */
+  }
+
+  .alignC {
+    text-align: center;
+  }
+
+  .image-size {
+    width: auto;
+    height: auto;
+  }
