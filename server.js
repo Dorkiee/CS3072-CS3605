@@ -1,3 +1,5 @@
+import { fileURLToPath } from 'url';
+
 import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
@@ -6,6 +8,9 @@ import routes from './userRoutes.js'
 import cors from 'cors'
 
 import path from 'path'
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const port = 4000
 
@@ -48,7 +53,6 @@ app.use(express.static(path.join(__dirname, '/')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/index.html'));
 });
-
 
 
 app.listen(process.env.PORT || port, () => console.log("server is up and running"))
