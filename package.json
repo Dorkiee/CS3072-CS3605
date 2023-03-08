@@ -1,10 +1,10 @@
 {
-  "name": "backend",
+  "name": "server",
   "version": "1.0.0",
   "description": "Backend for my FYP LMS project",
   "type": "module",
   "scripts": {
-    "start": "server.js",
+    "start": "react-scripts start",
     "build": "npm i",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
