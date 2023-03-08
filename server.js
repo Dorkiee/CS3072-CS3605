@@ -2,10 +2,10 @@ import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 
-import userRoutes from './backend/Routes/userRoutes.js'
+import userRoutes from './userRoutes.js'
 import courseRoutes from './courseRoutes.js'
 import cors from 'cors'
-import examRoutes from './backend/Routes/examRoutes.js'
+import examRoutes from './examRoutes.js'
 
 import path from 'path'
 
