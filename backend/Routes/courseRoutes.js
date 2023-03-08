@@ -1,6 +1,6 @@
 
 import express from 'express'
-import courseController from '../controllers/courseController.js'
+import courseController from '../../backend/Controllers/courseController.js'
 
 const courseRoutes = express.Router()
 
