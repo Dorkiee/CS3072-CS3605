@@ -1,5 +1,3 @@
-import { fileURLToPath } from 'url';
-
 import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
@@ -9,8 +7,6 @@ import cors from 'cors'
 
 import path from 'path'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const port = 4000
 
