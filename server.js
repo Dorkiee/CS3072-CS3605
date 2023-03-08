@@ -7,7 +7,6 @@ import cors from 'cors'
 
 import path from 'path'
 
-
 const port = 4000
 
 
@@ -43,6 +42,7 @@ app.use((err, req, res, next) => {
     stack: process.env.NODE_ENV === 'production' ? null : err.stack,
   })
 })
+
 
 app.listen(process.env.PORT || port, () => console.log("server is up and running"))
 
