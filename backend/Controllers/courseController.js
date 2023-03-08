@@ -1,7 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose';
 import courseModel from '../models/courseModel.js'
-import multer from 'multer';
 
 
 const Courses = mongoose.model("course");
